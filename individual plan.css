@@ -1,0 +1,19 @@
+.navbar {
+    background-color: var(--light-bg);
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--dark-color) ;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: #666;
+    margin: 0 1rem;
+    transition: color 0.3s;
+}
+
