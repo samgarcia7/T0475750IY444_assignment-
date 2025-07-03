@@ -85,18 +85,23 @@ body {
 }
 
 .btn-contact {
-    background-color: var(--dark-color);
-    color: var(--light-color);
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #000000;
     font-weight: 700;
-    padding: 0.75rem 2rem;
+    padding: 0.6rem 1.5rem;
     border-radius: 0.5rem;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease-in-out;
 }
-.btn-contact:hover {
-    opacity: 0.8;
-    color: var(--light-color);
+.btn-contact:hover,
+.btn-contact:active {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #000000;
 }
-
+.btn-contact:focus {
+    box-shadow: none;
+}
 .hero-section {
     padding: 10rem 0;
     text-align: center;
