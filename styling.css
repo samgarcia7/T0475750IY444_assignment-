@@ -269,9 +269,7 @@ body {
     .video-placeholder:hover .bi-play-circle-fill {
         color: #fff;
     }
-
-
- /*quiz css*/
+/*quiz css*/
 <style>
  .quiz-container {
      max-width: 700px;
@@ -287,3 +285,11 @@ body {
     background-color: #f8f9fa;
 < / style >
 }
+
+/*SAC page*/
+<style>
+ .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+     background-color: #212529;
+     color: #fff;
+ }
+</style>
