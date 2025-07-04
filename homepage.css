@@ -271,7 +271,7 @@ body {
     }
 
 
-//*quiz css*//
+ /*quiz css*/
 <style>
  .quiz-container {
      max-width: 700px;
@@ -285,5 +285,5 @@ body {
     border-radius: 0.5rem;
     padding: 2rem;
     background-color: #f8f9fa;
+< / style >
 }
-</style>
