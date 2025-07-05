@@ -11,16 +11,22 @@
     <link rel="stylesheet" href="styling.css">
 
 </head>
-<body>
 
+<body>
 <nav id="mainNav" class="navbar navbar-expand-lg">
-    <div class="container">
-        <a class="navbar-brand" href="homepage.html"><img src="images/LOGO.png" alt="Logo" style="height: 70px;"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+    <div class="container"> <a class="navbar-brand" href="homepage.html"><img src="images/LOGO.png" alt="FootballLogo" style="height: 70px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="homepage.html#programs">Programs</a></li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="." role="button" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Individual_plan.html">Individual Plan</a></li>
+                        <li><a class="dropdown-item" href="In_Game.html">In-Game Intelligence</a></li>
+                        <li><a class="dropdown-item" href="SAC.html">Strength & Conditioning</a></li>
+                    </ul>
                 <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
                 <li class="nav-item"><a class="nav-link" href="accessibility.html">Accessibility</a></li>
             </ul>
@@ -129,6 +135,10 @@
             <p class="mt-4 w-100 text-center">&copy;2025 THECODEFORBALLERS. All Rights Reserved.</p> </div>
     </div>
 </footer>
+
+<a href="https://wa.me/+447512685084" target="_blank" class="whatsapp-fab">
+    <i class="bi bi-whatsapp"></i>
+</a>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
