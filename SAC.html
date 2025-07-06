@@ -8,25 +8,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="styling.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
 <nav id="mainNav" class="navbar navbar-expand-lg">
-    <div class="container"> <a class="navbar-brand" href="homepage.html"><img src="images/LOGO.png" alt="FootballLogo" style="height: 70px;"></a>
+    <div class="container">
+        <a class="navbar-brand" href="homepage.html"><img src="images/LOGO.png" alt="FootballLogo" class="logo-img"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
-                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="." role="button" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="Individual_plan.html">Individual Plan</a></li>
                         <li><a class="dropdown-item" href="In_Game.html">In-Game Intelligence</a></li>
                         <li><a class="dropdown-item" href="SAC.html">Strength & Conditioning</a></li>
                     </ul>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
                 <li class="nav-item"><a class="nav-link" href="accessibility.html">Accessibility</a></li>
             </ul>
@@ -35,12 +36,12 @@
     </div>
 </nav>
 
-<header class="py-5 bg-light">
+<header class="page-header">
     <div class="container">
         <div class="row align-items-center g-5">
             <div class="col-lg-6" data-aos="fade-right">
                 <h1 class="display-4 fw-bolder">Strength & Conditioning</h1>
-                <p class="lead text-muted">writing.</p>
+                <p class="lead text-muted">Skill and intelligence mean nothing without the engine to execute. This program is designed to make you the complete athletic footballer.</p>
                 <hr class="my-4">
                 <ul class="list-unstyled fs-5">
                     <li class="mb-2"><i class="bi bi-check-circle-fill text-dark me-2"></i>Build Explosive Power</li>
@@ -49,7 +50,7 @@
                 </ul>
             </div>
             <div class="col-lg-6" data-aos="fade-left">
-                <img src= class="img-fluid rounded shadow-lg" alt="Athlete in training">
+                <img src="images/Individual Plan.jpg" class="img-fluid rounded shadow-lg" alt="Athlete performing a lunge">
             </div>
         </div>
     </div>
@@ -72,12 +73,19 @@
             <div class="tab-pane fade show active" id="pills-strength" role="tabpanel">
                 <div class="row align-items-center">
                     <div class="col-md-7">
-                        <h4 class="fw-bold">Build up power..</h4>
-                        <p>writing here.</p>
-                        <p><strong></strong>r.</p>
+                        <h4 class="fw-bold">Functional Strength & Power</h4>
+                        <p>Football power isn't about lifting the heaviest weight; it's about explosive, game-ready movements. Here's how we build it:</p>
+                        <ul class="list-unstyled mt-3">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Plyometrics:</strong> We use drills like on-the-spot vertical jumps, mimicking the movement of a box jump, to build explosive leg power for winning headers and holding off defenders.</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Core Stability:</strong> A strong core is the foundation of all athletic movement, providing balance when shooting and strength in a challenge.</li>
+                        </ul>
+                        <div class="alert alert-primary mt-4" role="alert">
+                            <h5 class="alert-heading fw-bold"><i class="bi bi-lightbulb-fill"></i> Baller's Tip:</h5>
+                            <p class="mb-0">Focus on the quality of the jump, not the quantity. Explode up, land soft and controlled.</p>
+                        </div>
                     </div>
                     <div class="col-md-5">
-                        <video controls muted loop class="img-fluid rounded" style="max-width: 250px; display: block; margin: auto;">
+                        <video controls muted loop class="img-fluid rounded video-square">
                             <source src="Videos/strength video.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -86,12 +94,19 @@
             <div class="tab-pane fade" id="pills-speed" role="tabpanel">
                 <div class="row align-items-center">
                     <div class="col-md-7">
-                        <h4 class="fw-bold">Develop Explosive, Game Changing Speed</h4>
-                        <p>writing here.</p>
-                        <p><strong>:</strong> A.</p>
+                        <h4 class="fw-bold">Speed & Agility</h4>
+                        <p>Straight-line speed is useful, but the game is won in quick changes of direction. We drill the mechanics of football-specific movement:</p>
+                        <ul class="list-unstyled mt-3">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Agility Ladders:</strong> These drills improve your foot speed, coordination, and ability to make rapid movements in tight spaces.</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Shuffle & Cut Drills:</strong> We focus on the ability to accelerate, decelerate, and change direction powerfully without losing balance.</li>
+                        </ul>
+                        <div class="alert alert-primary mt-4" role="alert">
+                            <h5 class="alert-heading fw-bold"><i class="bi bi-lightbulb-fill"></i> Baller's Tip:</h5>
+                            <p class="mb-0">Stay low to the ground when you change direction. A low center of gravity is the secret to explosive movement.</p>
+                        </div>
                     </div>
                     <div class="col-md-5">
-                        <video controls muted loop class="img-fluid rounded" style="max-width: 250px; display: block; margin: auto;">
+                        <video controls muted loop class="img-fluid rounded video-square">
                             <source src="Videos/agility_drill.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -100,15 +115,21 @@
             <div class="tab-pane fade" id="pills-stamina" role="tabpanel">
                 <div class="row align-items-center">
                     <div class="col-md-7">
-                        <h4 class="fw-bold">write</h4>
-                        <p>writing.</p>
-                        <p><strong></strong> .</p>
+                        <h4 class="fw-bold">Stamina & Endurance</h4>
+                        <p>The best players are as effective in the 90th minute as they are in the 1st. We build an engine that doesn't quit:</p>
+                        <ul class="list-unstyled mt-3">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>High-Intensity Intervals:</strong> Our running drills mimic the stop-start nature of a real match—sprint, jog, walk, repeat—to build your recovery time.</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Game-Specific Endurance:</strong> We incorporate the ball into stamina drills, so you're not just running, you're training to perform skills while fatigued.</li>
+                        </ul>
+                        <div class="alert alert-primary mt-4" role="alert">
+                            <h5 class="alert-heading fw-bold"><i class="bi bi-lightbulb-fill"></i> Baller's Tip:</h5>
+                            <p class="mb-0">The hard runs you do in the last 10 minutes of training are what win you the match in the last 10 minutes of the game.</p>
+                        </div>
                     </div>
                     <div class="col-md-5">
-                            <video controls muted loop class="img-fluid rounded" style="max-width: 250px; display: block; margin: auto;">
-                                <source src="Videos/stamina_drill.mp4" type="video/mp4">
-                            </video>
-                        </div>
+                        <video controls muted loop class="img-fluid rounded video-square">
+                            <source src="Videos/stamina_drill.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
             </div>

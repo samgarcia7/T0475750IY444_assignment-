@@ -6,29 +6,29 @@
     <title>Individual Plan - The Code for Ballers</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav id="mainNav" class="navbar navbar-expand-lg">
-    <div class="container"> <a class="navbar-brand" href="homepage.html"><img src="images/LOGO.png" alt="FootballLogo" style="height: 70px;"></a>
+    <div class="container">
+        <a class="navbar-brand" href="homepage.html"><img src="images/LOGO.png" alt="FootballLogo" class="logo-img"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
-                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="." role="button" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="Individual_plan.html">Individual Plan</a></li>
                         <li><a class="dropdown-item" href="In_Game.html">In-Game Intelligence</a></li>
                         <li><a class="dropdown-item" href="SAC.html">Strength & Conditioning</a></li>
                     </ul>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
                 <li class="nav-item"><a class="nav-link" href="accessibility.html">Accessibility</a></li>
             </ul>
@@ -37,19 +37,18 @@
     </div>
 </nav>
 
-<header class="page-header bg-light">
+<header class="page-header">
     <div class="container">
         <div class="row align-items-center g-5">
             <div class="col-lg-6" data-aos="fade-right">
                 <h1 class="display-4 fw-bolder">The Individual Plan</h1>
                 <p class="lead text-muted mt-3 mb-4">
-                   writing here
+                    Our Individual Plan is designed to help you stand out on the pitch. This plan focuses on the three fundamentals that every elite player must dominate: Shooting, Passing, and 1v1 Play.
                 </p>
                 <a href="#plan-details" class="btn btn-dark btn-lg">See the Breakdown</a>
             </div>
-
             <div class="col-lg-6" data-aos="fade-left">
-                <img src="" class="img-fluid rounded shadow-lg" alt="Individual Plan">
+                <img src="images/driving%20ball.jpeg.jpg" class="img-fluid rounded shadow-lg" alt="Individual Plan">
             </div>
         </div>
     </div>
@@ -59,48 +58,73 @@
     <div class="container">
         <div class="row align-items-center mb-5" data-aos="fade-up">
             <div class="col-md-6" data-aos="fade-right">
-                <video controls muted loop class="img-fluid rounded shadow" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+                <video controls muted loop class="img-fluid rounded shadow video-square">
                     <source src="Videos/howtoshoot.mp4" type="video/mp4">
-
                 </video>
             </div>
             <div class="col-md-6">
-                <h2 class="fw-bold">Drill 1</h2>
-                <p>Writing here.</p>
+                <h2 class="fw-bold">Mastering the Perfect Shot</h2>
+                <p class="text-muted">Just you, the ball, and good technique are required; no keeper, or even cones are needed. We go over the fundamentals that every player should know in this video:</p>
+                <ul class="list-unstyled mt-3">
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Chest up, body over the ball – Helps keep your shot down and balanced</li>
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Take a deep breath before shooting. Stay calm stay in control.</li>
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>The run up is important; take a few short, angled steps with zero rush.</li>
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Use your laces to strike the ball by locking your ankle, pointing your toe downward, and hit through the ball.</li>
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Keep an eye on the bottom of your other foot. Position it next to the ball as you run up, pointing it in the direction of the goal.</li>
+                </ul>
+                <div class="alert alert-primary mt-4" role="alert">
+                    <h5 class="alert-heading fw-bold"><i class="bi bi-lightbulb-fill"></i> Ballers tip:</h5>
+                    <p class="mb-0">Do this before or after your training. You don’t need a keeper — just focus on your body doing the same movement every time.</p>
+                </div>
             </div>
         </div>
 
-        <div class="row align-items-center mb-5" data-aos="fade-up">
-            <div class="col-md-6">
-                <h2 class="fw-bold">drill 2 or something</h2>
-                <p>writ here.</p>
-            </div>
+        <div class="row align-items-center mb-5 flex-row-reverse" data-aos="fade-up">
             <div class="col-md-6" data-aos="fade-right">
-                <video controls muted loop class="img-fluid rounded shadow" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+                <video controls muted loop class="img-fluid rounded shadow video-square">
                     <source src="Videos/passes video.mp4" type="video/mp4">
                 </video>
             </div>
-                    <i class="bi bi-play-circle-fill"></i>
+            <div class="col-md-6">
+                <h2 class="fw-bold">Accurate Passing</h2>
+                <p class="text-muted">Good passing is about simplicity and precision. Here's how to master the short passes that keep the game moving:</p>
+                <ul class="list-unstyled mt-3">
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Plant Foot:</strong> Place your non-kicking foot beside the ball, pointing towards your target.</li>
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Clean Contact:</strong> Use the inside of your foot for maximum control. Keep your ankle locked through the entire motion.</li>
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Follow Through:</strong> Your kicking foot should follow through directly at your target to ensure accuracy.</li>
+                </ul>
+                <div class="alert alert-primary mt-4" role="alert">
+                    <h5 class="alert-heading fw-bold"><i class="bi bi-lightbulb-fill"></i> Baller's Tip:</h5>
+                    <p class="mb-0">Always be on your feet, ready to move, as shown in the video. Never pass flat-footed.</p>
                 </div>
             </div>
         </div>
 
         <div class="row align-items-center mb-5" data-aos="fade-up">
-            <div class="col-md-6">
-                <video controls muted loop class="img-fluid rounded shadow" style="width: 70%; aspect-ratio: 1/1; object-fit: cover;">
+            <div class="col-md-6" data-aos="fade-right">
+                <video controls muted loop class="img-fluid rounded shadow video-square">
                     <source src="Videos/1on1.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="col-md-6">
-                <h2 class="fw-bold">writing here</h2>
-                <p>writing here.</p>
+                <h2 class="fw-bold">Dominating 1-on-1s</h2>
+                <p class="text-muted">Beating a defender is about deception. This side-to-side move helps you trick opponents and get away from dangerous plays:</p>
+                <ul class="list-unstyled mt-3">
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>The Setup:</strong> Approach the defender under control with the ball close to your feet. Don't rush.</li>
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>The Feint:</strong> Use a quick side-step or body feint, like the classic Ronaldo move, to make the defender commit their weight one way.</li>
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>The Escape:</strong> As they shift, push the ball into the open space with the outside of your foot and accelerate away.</li>
+                </ul>
+                <div class="alert alert-primary mt-4" role="alert">
+                    <h5 class="alert-heading fw-bold"><i class="bi bi-lightbulb-fill"></i> Baller's Tip:</h5>
+                    <p class="mb-0">The key is to sell the fake. Make the defender truly believe you're going one way before you explode into the other.</p>
+                </div>
             </div>
         </div>
 
         <div class="text-center pt-4" data-aos="fade-up">
             <h2 class="fw-bold">Ready to Decode Your Potential?</h2>
             <p class="lead">Stop guessing what you need to improve. Start training with purpose.</p>
-            <a href="quiz.html" class="btn btn-dark btn-lg mt-3">Take on Quiz</a>
+            <a href="quiz.html" class="btn btn-dark btn-lg mt-3">Take the Quiz</a>
         </div>
     </div>
 </section>
@@ -131,10 +155,6 @@
             <p class="mt-4 w-100 text-center">&copy;2025 THECODEFORBALLERS. All Rights Reserved.</p> </div>
     </div>
 </footer>
-
-<a href="https://wa.me/+447512685084" target="_blank" class="whatsapp-fab">
-    <i class="bi bi-whatsapp"></i>
-</a>
 
 <a href="https://wa.me/+447512685084" target="_blank" class="whatsapp-fab">
     <i class="bi bi-whatsapp"></i>

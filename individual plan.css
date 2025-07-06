@@ -17,3 +17,26 @@
     transition: color 0.3s;
 }
 
+.footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 5rem 0;
+}
+.footer h5 {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.footer a {
+    color: #a0a0a0;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.75rem;
+    transition: color 0.3s;
+}
+.footer a:hover {
+    color: var(--light-color);
+}
+.footer p {
+    color: #a0a0a0;
+}
+

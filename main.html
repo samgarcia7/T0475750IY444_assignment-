@@ -1,10 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Code For Ballers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Outfit', sans-serif;
+            background: #fff;
+            color: #000;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+        header {
+            position: sticky;
+            top: 0;
+            background: #000;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            position: relative;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #aaa;
+        }
+
+        nav a::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: -2.2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #000;
+            color: #fff;
+            padding: 4px 10px;
+            font-size: 0.75rem;
+            white-space: nowrap;
+            border-radius: 4px;
+            opacity: 0;
+            pointer-events: none;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover::after {
+            opacity: 1;
+        }
+
+
+        .burger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+        }
+
+        .burger div {
+            width: 25px;
+            height: 3px;
+            background: #fff;
+        }
+
+        .mobile-nav {
+            display: none;
+            flex-direction: column;
+            background: #000;
+            padding: 1rem 2rem;
+        }
+
+        .mobile-nav a {
+            padding: 0.75rem 0;
+            font-weight: 600;
+            border-top: 1px solid #333;
+        }
+
+        .mobile-nav a:hover {
+            background: #111;
+        }
+
+        .mobile-nav.show {
+            display: flex;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+
+            .burger {
+                display: flex;
+            }
+        }
+
+
+        .hero {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.6)),
+            url('images/hero-bg.jpg') center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+            padding: 160px 20px 120px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-inline: auto;
+        }
+
+        .btn {
+            background: #fff;
+            color: #000;
+            padding: 0.8rem 1.5rem;
+            font-weight: 600;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #000;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .programs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .program {
+            background: #f9f9f9;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .program:hover {
+            transform: translateY(-5px);
+        }
+
+        .program img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .program-content {
+            padding: 1.5rem;
+        }
+
+        .program-content h3 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .cta {
+            text-align: center;
+            background: #000;
+            color: #fff;
+            padding: 3rem 2rem;
+            border-radius: 12px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
 
+<header>
+    <div class="logo">Football Skills</div>
+    <nav>
+        <a href="#home" data-tooltip="Go to home">Home</a>
+        <a href="#about" data-tooltip="Learn about us">About Us</a>
+        <a href="#programs" data-tooltip="View training">Training</a>
+        <a href="#accessibility" data-tooltip="Access for everyone">Accessibility</a>
+        <a href="#contact" data-tooltip="Get in touch">Contact</a>
+    </nav>
+    <div class="burger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</header>
+<div class="mobile-nav" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#programs">Training</a>
+    <a href="#accessibility">Accessibility</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<section id="home" class="hero">
+    <h1>Unlock Your Football Potential</h1>
+    <p>Join a new generation of players developing elite skills, fitness, and football IQ.</p>
+    <a href="#programs" class="btn">Start Training</a>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Us</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">We are a football coaching platform focused on improving technical skills, physical ability, and tactical awareness. Whether you're a beginner or an aspiring pro, we have something for you.</p>
+</section>
+
+<section id="programs">
+    <h2 class="section-title">Training Programs</h2>
+    <div class="programs">
+        <div class="program">
+            <img src="images/technical-drills.jpg" alt="Technical Drills" />
+            <div class="program-content">
+                <h3>Technical Drills</h3>
+                <p>Sharpen your touch, dribbling, and passing with structured drills.</p>
+            </div>
+        </div>
+        <div class="program">
+            <img src="images/strength-fitness.jpg" alt="Strength & Fitness" />
+            <div class="program-content">
+                <h3>Strength & Fitness</h3>
+                <p>Build explosiveness and stamina with our football-specific fitness plans.</p>
+            </div>
+        </div>
+        <div class="program">
+            <img src="images/game-intelligence.jpg" alt="Game Intelligence" />
+            <div class="program-content">
+                <h3>Game Intelligence</h3>
+                <p>Boost your tactical awareness and decision-making on the pitch.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="accessibility">
+    <h2 class="section-title">Accessibility</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">Our platform is accessible to players of all backgrounds and abilities. We provide inclusive content, alternative formats, and flexible training options.</p>
+</section>
+
+<section class="cta">
+    <h2>Level Up Your Game Today</h2>
+    <p>Sign up to access elite training tools and coaching insights.</p>
+    <a href="#contact" class="btn">Join Now</a>
+</section>
+
+<footer id="contact">
+    <p>Contact us: <a href="mailto:coach@footyskills.com">coach@footyskills.com</a></p>
+    <p>&copy; 2025 Football Skills Academy</p>
+</footer>
+
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("show");
+    }
+</script>
 </body>
 </html>
+
